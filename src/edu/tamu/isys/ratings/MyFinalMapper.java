@@ -49,7 +49,7 @@ public class MyFinalMapper extends MapReduceBase implements  Mapper<LongWritable
 			genreName=words[0];
 			movieName_Rating=words[1];
 			output.collect(new Text(genreName), new Text(movieName_Rating));
-			System.out.println();
+			
 		}
 	}
 }
